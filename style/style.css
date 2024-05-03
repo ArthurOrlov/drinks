@@ -24,6 +24,7 @@
     --title-tea: #78dd50;
     --title-milk: #dfbf9b;
     --title-water: #180adb;
+    --lemonade-yellow: #ffd154;
 
     --yellow-lite: #FBCE51;
     --red-color: #F54932;
@@ -40,7 +41,7 @@
 body {
     font-size: 18px;
     color: var();
-    font-family: var();
+    font-family: var(--titul-language);
     line-height: 28px;
 }
 
@@ -170,7 +171,14 @@ h1 {
 
 /* Lemonade  */
 
-
+.lemonade {
+    background-color: var(--lemonade-yellow);
+    color: var(--title-lemonade);
+    font-size: 5vw;
+    line-height: 5vw;
+    display: flex;
+    text-transform: uppercase;
+}
 
 /* Coffee  */
 .coffee,
