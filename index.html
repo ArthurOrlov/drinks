@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/glass.css">
+    <link rel="stylesheet" href="./style/slider-lemonade.css">
+    <link rel="stylesheet" href="./style/slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./js/slider.js" defer></script>
 </head>
 <body>
@@ -14,99 +17,177 @@
         <video class="video" loop="loop" autoplay="" muted="">
             <source src="./img/lemonade.mp4" type="video/mp4" />
         </video>
-        <h1>Hey man!<br>Do you love lemonade<br>like I do?</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Hey man!<br>Do you love lemonade<br>like I do?</h1>
         
     </header>
     <section class="lemonade">
-        <div>Man, I love that stuff. How about you?</div>
-        <div class="wrapper">
-          <div class="glass">
-            <div class="liquid">
-              <div class="cube cube1"></div>
-              <div class="cube cube2"></div>
-              <div class="cube cube3"></div>
-              <div class="half-lemon lemon1">
-                <div class="seeds seed1"></div>
-                <div class="seeds seed2"></div>
-                <div class="seeds seed3"></div>
-                <div class="seeds seed4"></div>
-              </div>
-              <div class="half-lemon lemon2">
-                <div class="seeds seed1"></div>
-                <div class="seeds seed2"></div>
-                <div class="seeds seed3"></div>
-                <div class="seeds seed4"></div>
-              </div>
-              <div class="leaf"></div>
-              <div class="bubble bubble1"></div>
-              <div class="bubble bubble2"></div>
-              <div class="bubble bubble3"></div>
-              <div class="bubble bubble4"></div>
+        <div class="lemonade__glass">
+            <div data-aos="fade-up" data-aos-duration="1000">Man, I love that stuff. How about you?</div>
+            <div class="wrapper">
+            <div class="glass">
+                <div class="liquid">
+                <div class="cube cube1"></div>
+                <div class="cube cube2"></div>
+                <div class="cube cube3"></div>
+                <div class="half-lemon lemon1">
+                    <div class="seeds seed1"></div>
+                    <div class="seeds seed2"></div>
+                    <div class="seeds seed3"></div>
+                    <div class="seeds seed4"></div>
+                </div>
+                <div class="half-lemon lemon2">
+                    <div class="seeds seed1"></div>
+                    <div class="seeds seed2"></div>
+                    <div class="seeds seed3"></div>
+                    <div class="seeds seed4"></div>
+                </div>
+                <div class="leaf"></div>
+                <div class="bubble bubble1"></div>
+                <div class="bubble bubble2"></div>
+                <div class="bubble bubble3"></div>
+                <div class="bubble bubble4"></div>
+                </div>
+                <div class="straw"></div>
+                <div class="liquid liquid2"></div>
             </div>
-            <div class="straw"></div>
-            <div class="liquid liquid2"></div>
-          </div>
-          <div class="full-lemon">
-            <div class="seed seed1"></div>
-            <div class="seed seed2"></div>
-            <div class="seed seed3"></div>
-            <div class="seed seed4"></div>
-            <div class="seed seed5"></div>
-            <div class="seed seed6"></div>
-          </div>
+            <div class="full-lemon">
+                <div class="seed seed1"></div>
+                <div class="seed seed2"></div>
+                <div class="seed seed3"></div>
+                <div class="seed seed4"></div>
+                <div class="seed seed5"></div>
+                <div class="seed seed6"></div>
+            </div>
+            </div>
         </div>
-    </section>
-    <section class="coffee">
-        <div class="coffee-section">
-            <video class="video" loop="loop" autoplay="" muted="">
-                <source src="./img/coffee.mp4" type="video/mp4" />
-            </video>
-            <div class="coffee-section__text">Yeah, we got a tough guy in the group! You like coffee, right?</div>
-        </div>
-        
-    </section>
-    <section class="tea">
-        <div class="tea-section">
-            <video class="video" loop="loop" autoplay="" muted="">
-                <source src="./img/tea.mp4" type="video/mp4" />
-            </video>
-            <div class="tea-section__text">Chill out, man. How about a cup of tea?</div>
+        <div class="lemonade__slider">
+            <div class="lemonade__slider-block">
+                <img src="./img/lemonade_img0.jpg" class="item-0">
+                <img src="./img/lemonade_img1.jpg" class="item-1">
+                <img src="./img/lemonade_img2.jpg" class="item-2">
+                <img src="./img/lemonade_img3.jpg" class="item-3">
+                <img src="./img/lemonade_img5.jpg" class="item-5">
+            </div>
+            
+            <div class="lemonade__slider-text" data-aos="fade-up" data-aos-duration="1000">Your choice on this sweltering day</div>
         </div>
         
     </section>
-    <section class="tomato">
-        <div class="tomato-section">
-            <video class="video" loop="loop" autoplay="" muted="">
-                <source src="./img/tomato.mp4" type="video/mp4" />
-            </video>
-            <div class="tomato-section__text">I'm not trying to judge you, dude. But I am a little scared.</div>
-        </div>
-        
-    </section>
-    <section class="water">
-        <div class="water-section">
-            <video class="video" loop="loop" autoplay="" muted="">
-                <source src="./img/water.mp4" type="video/mp4" />
-            </video>
-            <div class="water-section__text">Water is life, man!<br>Be like water, bro!</div>
-        </div>
-        
-    </section>
+    <div class="coffee-section">
+        <video class="video" loop="loop" autoplay="" muted="">
+            <source src="./img/coffee.mp4" type="video/mp4" />
+        </video>
+        <div class="coffee-section__text" data-aos="fade-up" data-aos-duration="1000">Yeah, we got a tough guy in the group! You like coffee, right?</div>
+    </div>
+    <div class="marquee">
+            <div class="marquee__content">
+              <ul class="list-inline">
+                <li><img class="list-inline-img" src="./img/coffee0.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee1.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee2.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee3.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee4.jpg"></li>
+              </ul>
+              <ul class="list-inline">
+                <li><img class="list-inline-img" src="./img/coffee0.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee1.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee2.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee3.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee4.jpg"></li>
+              </ul>
+              <ul class="list-inline">
+                <li><img class="list-inline-img" src="./img/coffee0.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee1.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee2.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee3.jpg"></li>
+                <li><img class="list-inline-img" src="./img/coffee4.jpg"></li>
+              </ul>
+            </div>
+    </div>
 
+    <div class="tea-section">
+        <video class="video" loop="loop" autoplay="" muted="">
+            <source src="./img/tea.mp4" type="video/mp4" />
+        </video>
+        <div class="tea-section__text" data-aos="fade-up" data-aos-duration="1000">Chill out, man. How about a cup of tea?</div>
+    </div>
+    <div class="ant-carousel">
+        <div class="ant-carousel-hider">
+            <div class="participants-title">
+                <div class="carousel-arrows">
+                    <div class="ant-carousel-arrow-left"></div>
+                    <div class="ant-carousel-arrow-right"></div>
+                </div>
+            </div>
+            
+            <ul class="ant-carousel-list">
+                <li class="ant-carousel-element">
+                    <div class="participants-card">
+                        <img class="participants-card-img" src="./img/tea0.jpg" alt="foto">
+                    </div>
+                </li>
+                <li class="ant-carousel-element">
+                    <div class="participants-card">
+                        <img class="participants-card-img" src="./img/tea1.jpg" alt="foto">
+                    </div>
+                </li>
+                <li class="ant-carousel-element">
+                    <div class="participants-card">
+                        <img class="participants-card-img" src="./img/tea2.jpg" alt="foto">
+                    </div>
+                </li>
+                <li class="ant-carousel-element">
+                    <div class="participants-card">
+                        <img class="participants-card-img" src="./img/tea3.jpg" alt="foto">
 
+                    </div>
+                </li>
+                <li class="ant-carousel-element">
+                    <div class="participants-card">
+                        <img class="participants-card-img" src="./img/tea4.jpg" alt="foto">
 
-    <!--<script>
-        window.onload = function () {
-        const $body = document.body;
-        const $preloader = $body.querySelector('.preloader');
-        function afterTransition() {
-            $body.classList.add('loaded');
-            $body.classList.remove('loaded_hiding');
-            $preloader.removeEventListener('transitionend', afterTransition);
-        }
-        $body.classList.add('loaded_hiding');
-        $preloader.addEventListener('transitionend', afterTransition);
-        }
-    </script>-->
+                    </div>
+                </li>
+                <li class="ant-carousel-element">
+                    <div class="participants-card">
+                        <img class="participants-card-img" src="./img/tea5.jpg" alt="foto">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="tea-section">
+        <video class="video" loop="loop" autoplay="" muted="">
+            <source src="./img/tea2.mp4" type="video/mp4" />
+        </video>
+        <div class="tea-section__text tea-section__text-block">
+            <div class="tea-section__text-block-item"><br>Chill<br>out,<br>bro</div>
+        </div>
+    </div>
+
+    <div class="tomato-section">
+        <video class="video" loop="loop" autoplay="" muted="">
+            <source src="./img/tomato.mp4" type="video/mp4" />
+        </video>
+        <div class="tomato-section__text" data-aos="fade-up" data-aos-duration="1000">I'm not trying to judge you, dude. But I am a little scared.</div>
+    </div>
+    <div class="tomato-section-block">
+        <img class="tomato-section-block-img" src="./img/arni.gif">
+    </div>
+
+    <div class="water-section">
+        <video class="video" loop="loop" autoplay="" muted="">
+            <source src="./img/water.mp4" type="video/mp4" />
+        </video>
+        <div class="water-section__text" data-aos="fade-up" data-aos-duration="1000">Water is life, man!<br>Be like water, bro!</div>
+    </div>
+    <div class="continued" data-aos="fade-up" data-aos-duration="1000">
+        to be continued...
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
